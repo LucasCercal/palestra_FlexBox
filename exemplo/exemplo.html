@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Exemplo Flexbox na prática</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+        <link href="assets/css/index.css" rel="stylesheet">
+
+        <style>
+            .flex-container{
+                display: flex;
+            }
+            .flex-column{
+                flex-direction: column;
+            }
+            .flex-align-center{
+                align-items: center;
+            }
+            .flex-justify-center{
+                justify-content: center;
+            }
+            .flex-justify-space-between{
+                justify-content: space-between;
+            }
+            .flex-justify-space-around{
+                justify-content: space-around;
+            }
+            .flex-wrap{
+                flex-wrap:wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="flex-container flex-align-center flex-justify-space-around">
+                <div class="logo">
+                    <img src="assets/img/logo.svg" alt="NeoGrid">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="banner flex-container flex-column flex-align-center flex-justify-center">
+                <div class="banner-content">
+                    <div>
+                        <h1>Palestra FlexBox na prática!</h1>
+                    </div>
+                    <button class="btn" type="button"><span>Clique aqui e fique rico</span></button>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="title flex-container flex-justify-center">
+                <h2>Post Recentes</h2>
+            </div>
+            <div class="post container flex-container ">
+                <div class="card">
+                    <div class="image">
+                        <img src="assets/img/card-1.jpg" alt="card image">
+                    </div>
+                    <div class="text">
+                        <h3>
+                            Unificação de CT-e e MDF-e: como se preparar
+                        </h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="assets/img/card-2.jpg" alt="card image">
+                    </div>
+                    <div class="text">
+                        <h3>
+                            Unificação de CT-e e MDF-e: como se preparar
+                        </h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="assets/img/card-3.jpg" alt="card image">
+                    </div>
+                    <div class="text">
+                        <h3>
+                            Unificação de CT-e e MDF-e: como se preparar
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex-container flex-justify-center">
+            <p> Palestra FlexBox</p>
+        </footer>
+    </body>
+</html>
